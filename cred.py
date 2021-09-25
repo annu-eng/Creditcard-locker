@@ -45,7 +45,8 @@ def fetcher(name):           #initializing a function which gets the details of 
         
         if name == ser:
             
-            fetcher(name)
+            fetcher(name)                # here we didnt use else becasue lets say there are 3 positions A,B,C and out details are stored in C
+                                         # then after not finding the details in A, else will be executed hence treating the existing user as new user, which is undesirable.
     
     return(name)                                            #returning name to the main program incase the user in a new one.
 
